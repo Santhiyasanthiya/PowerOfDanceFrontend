@@ -1,0 +1,104 @@
+/* Hero Section */
+.pd_event_hero {
+  background: url("https://www.shutterstock.com/image-vector/detailed-vector-illustration-silhouettes-expressive-600nw-2457081329.jpg") no-repeat center/cover;
+  padding: 100px 20px;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+.pd_event_hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.pd_event_hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pd_event_subtitle {
+  font-size:2rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+}
+
+.pd_event_section_title {
+  font-size: 2rem;
+  font-weight: 700;
+color: rgb(2, 54, 2);
+  margin: 40px 0 20px;
+    font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+/* Event Cards */
+.pd_event_card {
+  background: #36573a;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+     font-family: 'Times New Roman', Times, serif;
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.pd_event_card:hover {
+  transform: translateY(-6px);
+}
+.pd_event_img {
+  width: 100%;
+  aspect-ratio: 4 / 3; 
+  object-fit: cover;
+}
+.pd_event_body {
+  padding: 15px;
+}
+.pd_event_name {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Gallery */
+.pd_event_gallery {
+  position: relative;
+}
+.pd_event_gallery_item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.pd_event_gallery_img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.pd_event_gallery_item:hover .pd_event_gallery_img {
+  transform: scale(1.05);
+}
+.pd_event_gallery_overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.pd_event_gallery_item:hover .pd_event_gallery_overlay {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pd_event_title { font-size: 2rem; }
+  .pd_event_subtitle { font-size: 1rem; }
+}

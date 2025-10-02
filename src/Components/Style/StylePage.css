@@ -1,0 +1,111 @@
+.pd_class_timeline_section {
+background: url("https://img.freepik.com/free-vector/soft-green-watercolor-texture-design-background_1055-21581.jpg?semt=ais_hybrid&w=740&q=80")  no-repeat center center/cover;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.pd_class_heading {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #034603;
+  margin-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.pd_class_timeline {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.pd_class_timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background: linear-gradient(to bottom, #034603, #1eff00, #92fe9d); 
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 10px;
+}
+
+.pd_class_timeline_item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.pd_class_timeline_item.left {
+  left: 0;
+}
+
+.pd_class_timeline_item.right {
+  left: 50%;
+}
+
+.pd_class_content {
+  background: #0c3801;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  font-size:18px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s ease;
+}
+
+.pd_class_content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pd_class_timeline_item.left::before,
+.pd_class_timeline_item.right::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0aa30a;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+.pd_class_timeline_item.left::before {
+  right: -10px;
+}
+
+.pd_class_timeline_item.right::before {
+  left: -10px;
+}
+.pd_class_img {
+  width: 100%;
+  height: auto;          /* maintain natural aspect ratio */
+  object-fit: contain;   /* show full image without cropping */
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .pd_class_timeline::after {
+    left: 20px;
+  }
+
+  .pd_class_timeline_item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+
+  .pd_class_timeline_item.right {
+    left: 0;
+  }
+
+  .pd_class_timeline_item.left::before,
+  .pd_class_timeline_item.right::before {
+    left: 10px;
+  }
+}

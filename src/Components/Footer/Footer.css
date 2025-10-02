@@ -1,0 +1,142 @@
+/* ==============================
+   Footer Base
+================================= */
+.pd_foor_pg_footer {
+  background: url("https://static.vecteezy.com/system/resources/previews/069/702/208/non_2x/lush-green-monstera-deliciosa-leaf-against-a-dark-green-background-free-photo.jpg")
+    no-repeat center/cover;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding: 60px 20px 30px;
+}
+
+.pd_foor_pg_footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.pd_foor_pg_footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ==============================
+   Section Headings
+================================= */
+.pd_foor_pg_footer h5 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #0dd60d;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* ==============================
+   Address & Contact
+================================= */
+.pd_foor_pg_address p,
+.pd_foor_pg_contact p {
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.pd_foor_pg_icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #0dd60d;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.pd_foor_pg_icon:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* ==============================
+   Social Media
+================================= */
+.pd_foor_pg_social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.pd_foor_pg_social a {
+  text-decoration: none;
+}
+
+.pd_foor_pg_social a .pd_foor_pg_icon {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b0b0b;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.pd_foor_pg_social a:hover .pd_foor_pg_icon {
+  transform: scale(1.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* Brand colors */
+.pd_foor_pg_social a:nth-child(1) .pd_foor_pg_icon {
+  color: #1877f2;
+}
+.pd_foor_pg_social a:nth-child(2) .pd_foor_pg_icon {
+  color: #ff0000;
+}
+.pd_foor_pg_social a:nth-child(3) .pd_foor_pg_icon {
+  color: #e1306c;
+}
+
+/* ==============================
+   Map Section
+================================= */
+.pd_foor_pg_map {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ==============================
+   CopyRight
+================================= */
+.pd_foor_pg_copy {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e1e1e1;
+}
+
+.pd_foor_pg_line {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 30px 0;
+}
+
+/* ==============================
+   Responsive
+================================= */
+@media (max-width: 992px) {
+  .pd_foor_pg_footer {
+    text-align: center;
+  }
+
+  .pd_foor_pg_social {
+    justify-content: center;
+  }
+}

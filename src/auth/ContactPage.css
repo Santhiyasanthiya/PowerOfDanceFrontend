@@ -1,0 +1,108 @@
+/* Page full center */
+.pd_contact_page {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* Container */
+.pd_contact_container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Title */
+.pd_contact_title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #073501;
+  margin-top: 70px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Form */
+.pd_contact_form {
+  background: #fff;
+  padding: 25px;
+
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Form groups */
+.pd_contact_group {
+  margin-bottom: 15px;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.pd_contact_label {
+  font-size: 1rem;
+
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.pd_contact_input,
+.pd_contact_textarea,
+.pd_contact_form select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.pd_contact_input:focus,
+.pd_contact_textarea:focus,
+.pd_contact_form select:focus {
+  border-color: #f8b500;
+}
+
+/* Textarea */
+.pd_contact_textarea {
+  resize: none;
+}
+
+/* Error message */
+.pd_contact_error {
+  font-size: 0.85rem;
+  color: red;
+  margin-top: 4px;
+}
+
+/* Neon Submit Button */
+.pd_contact_btn {
+  /* width: 100%; */
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #032e1c;
+  color: #ffffff;
+ 
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pd_contact_title {
+    font-size: 1.6rem;
+  }
+  .pd_contact_form {
+    padding: 20px;
+  }
+}

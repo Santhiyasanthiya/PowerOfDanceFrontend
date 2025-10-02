@@ -1,0 +1,37 @@
+.pd_ho_count_container {
+  padding: 40px 0;
+}
+
+.pd_ho_count_heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.pd_ho_count_card {
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pd_ho_count_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pd_ho_count_icon {
+  margin-bottom: 15px;
+}
+
+.pd_ho_count_number {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.pd_ho_count_title {
+  font-size: 18px;
+  margin-top: 10px;
+}
