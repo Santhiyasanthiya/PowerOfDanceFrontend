@@ -9,21 +9,24 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  // Close menu when clicking a link
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="pd_head_header fixed-top">
       <nav className="pd_head_navbar container">
         {/* Logo */}
-       {/* Logo */}
-<div className="pd_head_logo">
-  <Link to="/">
-    <img
-      src="https://res.cloudinary.com/dk50cmtps/image/upload/v1758199428/pd-logo-design_853558-129-removebg-preview_sdmpyy.png"
-      alt="Logo"
-      className="pd_head_logo_img"
-    />
-  </Link>
-</div>
-
+        <div className="pd_head_logo">
+          <Link to="/" onClick={closeMenu}>
+            <img
+              src="https://res.cloudinary.com/dk50cmtps/image/upload/v1758199428/pd-logo-design_853558-129-removebg-preview_sdmpyy.png"
+              alt="Logo"
+              className="pd_head_logo_img"
+            />
+          </Link>
+        </div>
 
         {/* Hamburger Icon (visible only on mobile) */}
         <div className="pd_head_toggle d-md-none" onClick={toggleMenu}>
@@ -39,22 +42,22 @@ const Header = () => {
           }`}
         >
           <li className="pd_head_item">
-            <Link to="/about" className="pd_head_link">
+            <Link to="/about" className="pd_head_link" onClick={closeMenu}>
               About
             </Link>
           </li>
           <li className="pd_head_item">
-            <Link to="/event" className="pd_head_link">
+            <Link to="/event" className="pd_head_link" onClick={closeMenu}>
               Event
             </Link>
           </li>
           <li className="pd_head_item">
-            <Link to="/styles" className="pd_head_link">
+            <Link to="/styles" className="pd_head_link" onClick={closeMenu}>
               Styles
             </Link>
           </li>
           <li className="pd_head_item">
-            <Link to="/contact" className="pd_head_link">
+            <Link to="/contact" className="pd_head_link" onClick={closeMenu}>
               Contact
             </Link>
           </li>
